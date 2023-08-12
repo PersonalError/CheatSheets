@@ -45,10 +45,10 @@ p {
     font-weight: bold;
     color: hsl(0, 0%, 90%);
     transition: color 0.1s;
+    cursor: pointer;
 }
 
 #mdn-link:hover {
-    cursor: pointer;
     color: hsl(0, 0%, 10%);
 }
 

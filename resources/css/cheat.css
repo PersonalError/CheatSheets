@@ -55,6 +55,7 @@ td {
 .element-link {
     color: hsl(0, 0%, 90%);
     transition: color 0.1s;
+    cursor: pointer;
 }
 
 .element-link:hover {

@@ -36,12 +36,12 @@ nav a {
     color: hsl(0, 0%, 90%);
     padding: 15px 10px 20px 10px;
     transition: background-color 0.1s, color 0.1s;
+    cursor: pointer;
 }
 
 nav a:hover {
     color: hsl(0, 0%, 10%);
     background-color: hsl(0, 0%, 90%);
-    cursor: pointer;
 }
 
 #on-page {

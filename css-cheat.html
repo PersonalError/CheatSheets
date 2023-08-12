@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=REM:wght@500&display=swap" rel="stylesheet">    
+    <link href="./resources/images/favicon.png" type="image/x-icon" rel="icon" />
+    <link href="./resources/css/reset.css" type="text/css" rel="stylesheet" />
+    <link href="./resources/css/universal.css" type="text/css" rel="stylesheet" />
+    <link href="./resources/css/cheat.css" type="text/css" rel="stylesheet" />
+    <title>PersonalError | Cheat Sheets</title>
+</head>
+<body>
+    
+<!--Universaly styled navigation bar-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./html-cheat.html">HTML</a></li>
+                <li><a href="#" id="on-page">CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="table-container">
+            <table>
+
+                <thead>
+                    <tr>
+                        <th colspan="3" id="table-top">CSS Cheat Sheet</th>
+                    </tr>
+                    <tr>
+                        <th scope="col" class="left-col" >Type</th>
+                        <th scope="col" class="center-col">Syntax</th>
+                        <th scope="col" class="right-col">Description</th> 
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th id="selectors" colspan="3">Selectors</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors" class="element-link" target="_blank" title="View the MDN Web Doc">universal</a>
+                        </td>
+                        <td>
+                            <span class="code">* {<br><br>}</span>
+                        </td>
+                        <td>
+                            The universal selector, indicated by an asterisk, is used to select everything in an html document.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors" class="element-link" target="_blank" title="View the MDN Web Doc">type</a>
+                        </td>
+                        <td>
+                            <span class="code">h1 {<br><br>}</span>
+                        </td>
+                        <td>
+                            The type selector is used to select general html elements in a document.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors" class="element-link" target="_blank" title="View the MDN Web Doc">class</a>
+                        </td>
+                        <td>
+                            <span class="code">.element-class {<br><br>}</span>
+                        </td>
+                        <td>
+                            The class selector is used to select elements with a class attribute (the class selector is more specific than the type selector)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors" class="element-link" target="_blank" title="View the MDN Web Doc">id</a>
+                        </td>
+                        <td>
+                            <span class="code">#element-id {<br><br>}</span>
+                        </td>
+                        <td>
+                            The id selector is used to select elements with a specific id attribute (the id selector is more specific than the class and type selectors)
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <th id="psuedo-class" colspan="3">Psuedo-Class & Psuedo-Element</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before" target="_blank" class="element-link" title="View the MDN Web Doc">before</a>
+                        </td>
+                        <td>
+                            <span class="code">::before</span>
+                        </td>
+                        <td>
+                            The before creates a psuedo-element that is the first child of the selected element.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::after" target="_blank" class="element-link" title="View the MDN Web Doc">after</a>
+                        </td>
+                        <td>
+                            <span class="code">::after</span>
+                        </td>
+                        <td>
+                            The after creates a psuedo-element that is the last child of the selected element.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th id="colors" colspan="3">Colors</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color" target="_blank" class="element-link" title="View the MDN Web Doc">color</a>
+                        </td>
+                        <td>
+                            <span class="code">color: red;</span>
+                        </td>
+                        <td>
+                            The color CSS property sets the foreground color of an element's text and text decoration.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color" target="_blank" class="element-link" title="View the MDN Web Doc">background color</a>
+                        </td>
+                        <td>
+                            <span class="code">background-color: red;</span>
+                        </td>
+                        <td>
+                            The background-color CSS property sets the background color of an image.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th id="typography" colspan="3">Typography</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family" target="_blank" class="element-link" title="View the MDN Web Doc">font family</a>
+                        </td>
+                        <td>
+                            <span class="code">font-family: Arial, sans-serif;</span>
+                        </td>
+                        <td>
+                            The font-family CSS property specifies the typeface for an element.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" target="_blank" class="element-link" title="View the MDN Web Doc">font size</a>
+                        </td>
+                        <td>
+                            <span class="code">font-size: 16px;</span>
+                        </td>
+                        <td>
+                            The font-size CSS property sets the size of a font.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight" target="_blank" class="element-link" title="View the MDN Web Doc">font weight</a>
+                        </td>
+                        <td>
+                            <span class="code">font-weight: bold;</span>
+                        </td>
+                        <td>
+                            The font-weight CSS property sets the weight of a font.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing" target="_blank" class="element-link" title="View the MDN Web Doc">letter spacing</a>
+                        </td>
+                        <td>
+                            <span class="code">letter-spacing: 2px;</span>
+                        </td>
+                        <td>
+                            The letter-spacing CSS property sets the horizontal spacing behavior between text characters.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing" target="_blank" class="element-link" title="View the MDN Web Doc">word spacing</a>
+                        </td>
+                        <td>
+                            <span class="code">word-spacing: 2px;</span>
+                        </td>
+                        <td>
+                            The word-spacing CSS property sets the length of space between words and between tags.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/line-height" target="_blank" class="element-link" title="View the MDN Web Doc">line height</a>
+                        </td>
+                        <td>
+                            <span class="code">line-height: 2.5;</span>
+                        </td>
+                        <td>
+                            The line-height CSS property sets the height of a line box.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align" target="_blank" class="element-link" title="View the MDN Web Doc">text align</a>
+                        </td>
+                        <td>
+                            <span class="code">text-align: center;</span>
+                        </td>
+                        <td>
+                            The text-align CSS property sets the horizontal alignment of inline-level content inside a block, element or table-cell block.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th id="positioning" colspan="3">Positioning</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank" class="element-link" title="View the MDN Web Doc">position</a>
+                        </td>
+                        <td>
+                            <span class="code">position: relative;</span>
+                        </td>
+                        <td>
+                            The position CSS property sets how an element is positioned in a document. The top, right, bottom & left properties determine the final
+                            location of positioned elements.
+                        </td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><a href="#table-top" class="element-link">Top</a></td>
+                    </tr>
+                </tfoot>
+
+            </table>
+        </div>
+        <div class="quick-nav-container">
+            <p id="quick-nav-header">Quick Nav</p>
+            <div class="quick-nav-box">
+                <p class="quick-nav-arrows">&lt; &gt;</p>
+                <ul class="quick-nav-list">
+                    <li><a href="#selectors" class="quick-nav-link">Selectors</a></li>
+                    <li><a href="#psuedo-class" class="quick-nav-link">Psuedo Class</a></li>
+                    <li><a href="#colors" class="quick-nav-link">Colors</a></li>
+                    <li><a href="#typography" class="quick-nav-link">Typography</a></li>
+                    <li><a href="#positioning" class="quick-nav-link">Positioning</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+<!-- The Universaly styled footer-->
+    <footer>
+        <p id="footer-p">
+            <span class="contact-info">By: </span>Scot Stewart | PersonalError 
+            <span class="contact-info">Web: </span>PersonalError.github.io 
+            <span class="contact-info">Email: </span>Personalerror@outlook.com
+         </p>
+    </footer>
+</body>
+</html>

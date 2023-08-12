@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=REM:wght@500&display=swap" rel="stylesheet">  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">          
+        <link href="./resources/images/favicon.png" type="image/x-icon" rel="icon" />
+        <link href="./resources/css/reset.css" type="text/css" rel="stylesheet" />
+        <link href="./resources/css/universal.css" type="text/css" rel="stylesheet" />
+        <link href="./resources/css/cheat.css" type="text/css" rel="stylesheet" />
+        <title>PersonalError | Cheat Sheets</title>
+    </head>
+    <body>
+        
+    <!--Universaly styled navigation bar-->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#" id="on-page">HTML</a></li>
+                    <li><a href="./css-cheat.html">CSS</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <!-- The HTML Table Container-->
+        <main>
+            <div class="table-container">
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th colspan="3" id="table-top">HTML Cheat Sheet</th>
+                        </tr>
+                        <tr>
+                            <th scope="col" class="left-col">Element</th>
+                            <th scope="col" class="center-col">Syntax</th>
+                            <th scope="col" class="right-col">Description</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th id="boilerplate" colspan="3">Boilerplate HTML</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype" target="_blank" class="element-link" title="View the MDN Web Doc">Doctype</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;!DOCTYPE html&gt;</span>
+                            </td>
+                            <td>
+                                The doctype is the required preamble found at the top of all HTML documents. It instructs the browser to expect a well formatted HTML5 document.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html" target="_blank" class="element-link" title="View the MDN Web Doc">html</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;html&gt;</span>
+                            </td>
+                            <td>
+                                The root (top level element) of an HTML document. All other elements must be descendants of this element.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head" target="_blank" class="element-link" title="View the MDN Web Doc">head</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;head&gt;</span>
+                            </td>
+                            <td>
+                                The head element contains machine-readable information (metadata) about the document, like its title, scripts and stylesheets.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta" target="_blank" class="element-link" title="View the MDN Web Doc">meta</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;meta&gt;</span>
+                            </td>
+                            <td>
+                                The meta element represents metadata that cannot be represented by other HTML meta-related 
+                                elements.
+                            </td>
+                        </tr>
+                        <td>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link" target="_blank" class="element-link" title="View the MDN Web Doc">link</a>
+                        </td>
+                        <td>
+                            <span class="code">&lt;link&gt;</span>
+                        </td>
+                        <td>
+                            The link HTML element specifies relationships between the current document and an external resource.
+                        </td>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title" target="_blank" class="element-link" title="View the MDN Web Doc">title</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;title&gt;</span> 
+                            </td>
+                            <td>
+                                The title element defines the document's title that is shown in a browser's title bar or a page's tab.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th id="non-semantic" colspan="3">Non-Semantic HTML</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span" target="_blank" class="element-link" title="View the MDN Web Doc">span</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;span&gt;</span>
+                            </td>
+                            <td>
+                                The span element is a generic inline container for phrasing content.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div" target="_blank" class="element-link" title="View the MDN Web Doc">div</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;div&gt;</span>
+                            </td>
+                            <td>
+                                The div element is a generic container for flow elements.
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <th id="semantic" colspan="3">Semantic HTML</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article" target="_blank" class="element-link" title="View the MDN Web Doc">article</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;article&gt;</span>
+                            </td>
+                            <td>
+                                The article element represents a self-contained composition in a document, page, application, or site.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside" target="_blank" class="element-link" title="View the MDN Web Doc">aside</a>
+                            </td>
+                            <td>
+                                <span class="code"> &lt;aside&gt;</span>
+                            </td>
+                            <td>
+                                The aside element represents a portion of a document whose content is only indirectly related to the document's main content.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure" target="_blank" class="element-link" title="View the MDN Web Doc">figure</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;figure&gt;</span>
+                            </td>
+                            <td>
+                                The figure element represents self-contained content.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption" target="_blank" class="element-link" title="View the MDN Web Doc">figcaption</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;figcaption&gt;</span>
+                            </td>
+                            <td>
+                                The figcaption element represents a caption or legend describing the contents of its parent figure element.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header" target="_blank" class="element-link" title="View the MDN Web Doc">header</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;header&gt;</span>
+                            </td>
+                            <td>
+                                The header element represents introductory content.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main" target="_blank" class="element-link" title="View the MDN Web Doc">main</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;main&gt;</span>
+                            </td>
+                            <td>
+                                The main element represents the dominant content of the body in a document.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer" target="_blank" class="element-link" title="View the MDN Web Doc">footer</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;footer&gt;</span>
+                            </td>
+                            <td>
+                                The footer element represents a footer for its nearest ancestor sectioning content.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" target="_blank" class="element-link" title="View the MDN Web Doc">nav</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;nav&gt;</span>
+                            </td>
+                            <td>
+                                The nav element represents a section of a page whose purpose it is to provide navigational links.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th id="tables" colspan="3">Table Elements</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_blank" class="element-link" title="View the MDN Web Doc">table</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;table&gt;</span>
+                            </td>
+                            <td>
+                                The table element represents tabular data.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead" target="_blank" class="element-link" title="View the MDN Web Doc">thead</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;thead&gt;</span>
+                            </td>
+                            <td>
+                                The thead element defines a set of rows defining the head of the columns of a table.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody" target="_blank" class="element-link" title="View the MDN Web Doc">tbody</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;tbody&gt;</span>
+                            </td>
+                            <td>
+                                The tbody element encapsulates a set of table rows, indicating that they comprise the body of the table.
+                            </td>  
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot" target="_blank" class="element-link" title="View the MDN Web Doc">tfoot</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;tfoot&gt;</span>
+                            </td>
+                            <td>
+                                The tfoot element defines a set of rows summarizing the columns of a table.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr" target="_blank" class="element-link" title="View the MDN Web Doc">tr</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;tr&gt;</span>
+                            </td>
+                            <td>
+                                The table row element defines a row of cells in a table.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th" target="_blank" class="element-link" title="View the MDN Web Doc">th</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;th&gt;</span>
+                            </td>
+                            <td>
+                                The table header element defines a cell as the header of a group of table cells.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td" target="_blank" class="element-link" title="View the MDN Web Doc">td</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;td&gt;</span>
+                            </td>
+                            <td>
+                                The table data element defines a cell of a table.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th id="forms" colspan="3">Forms</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank" class="element-link" title="View the MDN Web Doc">form</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;form&gt;</span>
+                            </td>
+                            <td>
+                                The form element represents a document section containing interactive controls for submitting information.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank" class="element-link" title="View the MDN Web Doc">input</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;input&gt;</span>
+                            </td>
+                            <td>
+                                The input element is used to create interactive controls for web-based forms.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label" target="_blank" class="element-link" title="View the MDN Web Doc">label</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;label&gt;</span>
+                            </td>
+                            <td>
+                                The label element represents a caption for an item in a user interface.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea" target="_blank" class="element-link" title="View the MDN Web Doc">textarea</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;textarea&gt;</span>
+                            </td>
+                            <td>
+                                The textarea element represents a multi-line plain-text editing control.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select" target="_blank" class="element-link" title="View the MDN Web Doc">select</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;select&gt;</span>
+                            </td>
+                            <td>
+                                The select element represents a control that provides a menu of options.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist" target="_blank" class="element-link" title="View the MDN Web Doc">datalist</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;datalist&gt;</span>
+                            </td>
+                            <td>
+                                The datalist element contains a set of option elements that represent the permissable or recommended options.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option" target="_blank" class="element-link" title="View the MDN Web Doc">option</a>
+                            </td>
+                            <td>
+                                <span class="code">&lt;option&gt;</span>
+                            </td>
+                            <td>
+                                The option element is used to define an item contained in a select or datalist element.
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="3"><a href="#table-top" class="element-link">Top</a></td>
+                        </tr>
+                    </tfoot>
+                
+                </table>
+            </div>
+            <div class="quick-nav-container">
+                <p id="quick-nav-header">Quick Nav</p>
+                <div class="quick-nav-box">
+                    <p class="quick-nav-arrows">&lt; &gt;</p>
+                    <ul class="quick-nav-list">
+                        <li><a href="#boilerplate" class="quick-nav-link">Boilerplate</a></li>
+                        <li><a href="#non-semantic" class="quick-nav-link">Non-Semantic HTML</a></li>
+                        <li><a href="#semantic" class="quick-nav-link">Semantic HTML</a></li>
+                        <li><a href="#tables" class="quick-nav-link">Tables</a></li>
+                        <li><a href="#forms" class="quick-nav-link">Forms</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </main>
+
+    <!-- The Universaly styled footer-->
+        <footer>
+            <p id="footer-p">
+                <span class="contact-info">By: </span>Scot Stewart | PersonalError 
+                <span class="contact-info">Web: </span>PersonalError.github.io 
+                <span class="contact-info">Email: </span>Personalerror@outlook.com
+            </p>
+        </footer>
+    </body>
+</html>
